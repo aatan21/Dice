@@ -26,10 +26,15 @@ class Die //models one single dice cube
   }
   void roll()
   {
-    //your code here
+    number = (int)(Math.random() * 6 + 1);
   }
   void show()
   {
-    rect(150, 150, 50, 50, 0);
+    strokeWeight(2);
+    stroke(55, 198, 255);
+    noFill();
+    rect(myX-25, myY-25, 50, 50, 15);
+    fill(55, 198, 255);
+    ellipse(myX, myY, 8, 8);
   }
 }
